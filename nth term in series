@@ -1,0 +1,27 @@
+Question
+Given a number N, find the Nth term in the series 1, 3, 6, 10, 15, 21…
+
+Solution:
+class Solution
+{
+  public:
+    int findNthterm(int N)
+    {
+      int i=1;
+      if(N==1)
+        return 1;
+      int p=1;
+      while(i<N)
+      {
+          i++;
+          p=p+i;
+      }
+    }
+    return p;
+  }
+
+Explaination:
+* First initialize i=1
+* Iterate i from 1 to n add i to p in each iteration
+* Everytime increment i
+* Return p
