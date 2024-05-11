@@ -1,0 +1,27 @@
+Question:
+Create the multiplication table of a given number N and return the table as an array
+
+
+Solution
+class Solution
+{
+public:
+    vector<int> getTable(int N)
+    {
+        // Write Your Code here
+        int i=1;
+        vector<int> t;
+        while(i<11)
+        {
+            t.push_back(N*i);
+            i++;
+        }
+        return t;
+    }
+};
+
+Explaination:
+* As we have to return the answer in vector format first we declare a vector 
+* Then we iterate a variable i from 1 to 10
+* for every i we multiply n with i and push the value into the vector
+*Now return the vector
