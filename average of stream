@@ -1,0 +1,24 @@
+Question:
+Given a stream of incoming numbers, find average or mean of the stream at every point.
+
+Solution:
+class Solution{
+public:	
+	vector<float> streamAvg(int arr[], int n) {
+	    float sum=0,count=0;
+	    vector<float> v;
+	    for(int i=0;i<n;i++)
+	    {
+	        sum+=arr[i];
+	        count++;
+	        v.push_back(sum/count);
+	    }
+	    return v;
+	}
+};
+
+Explaination:
+*First we declare variable sum
+*Iterate a veariable i from 0 to n find sum of first i+1 numbers of array and divide it with i+1
+*Now push the numbers into the vector
+*Return vector
