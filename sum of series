@@ -1,0 +1,16 @@
+Question:
+Write a program to find the sum of the given series 1+2+3+ . . . . . .(N terms)
+
+Solution:
+class Solution {
+  public:
+    long long seriesSum(int n) {
+        // code here
+        long long sum=static_cast<long long> (n+1)*n/2;
+        return sum;
+    }
+};
+
+Explaination:
+Given a number n,to calculate the sum of series upto n,i have used the sum of first n natural numbers sum=n*(n+1)2 and return sum
+here,I have used a casting operator ie static_cast<long long> which converts the product into the type long long
