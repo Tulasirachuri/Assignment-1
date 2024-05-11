@@ -1,0 +1,19 @@
+Question:
+Given a positive integer N, determine whether it is odd or even
+
+Solution:
+class Solution
+{
+  public:
+    string oddEven(int N)
+    {
+      if(N%2==0)
+          return "even";
+      else
+          return "odd";
+    }
+};
+
+Explaination:
+*We know that the numbers that are divisible by 2 are even and the others are odd
+*So we check if n%2=0 return even else return odd
