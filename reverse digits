@@ -1,0 +1,25 @@
+Question:
+You are given an integer N, reverse the digits of given number N, ensuring that the reversed number has no leading zeroes. 
+Return the resulting reversed number
+
+Solution:
+long long int reverse_digit(long long int n)
+		{
+		    // Code here
+		    int p;
+		    long long sum=0;
+		    while(n!=0)
+		    {
+		        p=n%10;
+		        sum=sum*10+p;
+		        n=n/10;
+		    }
+		    return sum;
+		}
+
+Explaination:
+* First declare a variable p,sum
+* here p is to store the remainder at each iteration
+* next iterate the loop until n becomes 0 and get the remainder at each iteration
+* now multiply the sum by 10 at each itartion
+* return sum
