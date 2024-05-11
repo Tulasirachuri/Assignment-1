@@ -1,0 +1,21 @@
+Question:
+Swap given two numbers and print them. (Try to do it without a temporary variable.) and return it.
+
+Solution:
+class Solution{   
+public:
+    pair<int, int> get(int a, int b){
+        //complete the function here
+        pair<int,int>p;
+        p.first=b;
+        p.second=a;
+        return p;
+        
+    }
+};
+
+Explaination:
+* As we have to return a pair we declare a pair
+* next,we push b as the first element and a as the second element
+p.first defines the first element and p.second defines the second element of the pair
+*Now return the pair
