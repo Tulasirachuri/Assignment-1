@@ -1,0 +1,28 @@
+Question:
+Given a single integer N, your task is to find the sum of the square of the first N even natural Numbers.
+
+Solution:
+class Solution
+{
+  public:
+    long long int sum_of_square_evenNumbers(long long int n)
+    {
+      int i=0,p=0;
+      long long sum=0;
+      while(p<n)
+      {
+        i+=2;
+        p++;
+        sum+=i*i;
+      }
+      return sum;
+    }
+  }
+
+Explaination:
+* Initialize variables i (to track even numbers), p (to track the count of even numbers), and sum (to store the sum of squares).
+* While the count p is less than n, repeat the following steps:
+* Increment i by 2 to get the next even number.
+* Increment the count p.
+* Add the square of i to the sum.
+* After the loop ends, return the computed sum.
