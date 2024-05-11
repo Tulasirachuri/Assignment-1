@@ -1,0 +1,14 @@
+Question:
+Given two numbers A and B. Your task is to return the sum of A and B
+
+Solution:
+class Solution
+{
+  public:
+        int addition(int a,int b)
+        {
+            return A+B;
+        }
+}
+Explaination:
+here we just use an arithmetic operator '+' for addition 
