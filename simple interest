@@ -1,0 +1,18 @@
+Question:
+Given three integers P,R and T, denoting Principal, Rate of Interest and Time period respectively.
+Compute the simple Interest.
+
+Solution:
+class Solution {
+  public:
+    double simpleInterest(int P, int R, int T) {
+        // code here
+        double si=(P*T*R)/100.00;
+        return si;
+    }
+};
+
+Explaination:
+* As we have to return si in double,we declare si variable
+* Use the formula p*t*r/100.00
+* Return si
